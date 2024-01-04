@@ -5,12 +5,12 @@ function increse(){
 if(count>=25)
 {
     ngk[0].textContent = count
-    alert("Allows Less Than 25 Only")
+    alert("Allows Less Than 25")
 }
    else {
     count++;
     ngk[0].textContent = count
-    ngk[1].textContent ="increased"
+    ngk[1].textContent ="incremented"
 
     if(count%2==0)
     {
@@ -32,7 +32,7 @@ function decrease(){
 
         count--
         ngk[0].textContent = count
-        ngk[1].textContent = "decreased"
+        ngk[1].textContent = "decremented"
 
         if(count%2==0){
             ngk[2].textContent = "even"
@@ -45,7 +45,7 @@ function decrease(){
     }
     else{
  
-        alert("Allows Grater Than Zero Only")
+        alert("Allows Grater Than Zero")
 
     }
 }
