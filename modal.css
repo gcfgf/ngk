@@ -1,0 +1,36 @@
+/* *{
+    box-sizing: border-box;
+    background-color:chocolate;
+}
+
+.modal{
+
+    display: none;
+    border: 1px solid yellow;
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+    padding: 10px 10px;
+}
+.close{
+
+    float: right;
+    position: relative;
+}
+.button{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+ 
+   
+
+}
+.open{
+border-radius: 20px;
+background-color: brown;
+} */
+.modal{
+    visibility: hidden;
+}
