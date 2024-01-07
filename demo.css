@@ -22,6 +22,7 @@ img{
    margin: 10px;
    background-color:snow;
    border: 1px solid gainsboro;
+   align-items: center;
 }
 p1{
     text-align: center;
