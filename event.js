@@ -37,6 +37,6 @@ if(e.target.tagName ==="BUTTON"){
 
 })
 
-/**event dedicatin
+/**event dedication
  *is instead of writting event for one by one button using taking direct parrent element and targeted the value and print the innertext
  */

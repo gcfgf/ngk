@@ -1,0 +1,51 @@
+.main{
+   
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+   text-align: center;
+   box-shadow: 5px 5px 5px 5px green;
+
+}
+
+#mainDiv{
+    
+    display:grid;
+    grid-template-columns: repeat(3,250px);
+    
+}
+h1{
+    text-align: center;
+}
+.btn{
+    text-align: center;
+}
+
+.cardData{
+    height: 800px;
+    width: 300px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: rgb(242, 217, 167);
+    box-shadow: 5px 5px 5px 5px gray ;
+
+} 
+.container{
+
+    display: grid;
+   grid-template-columns:repeat(2,800px) ;
+  background-color: linen;
+  border-radius: 10px;
+ 
+   
+}
+.btn{
+    border-radius: 5px;
+    background-color: rgb(101, 95, 95);
+    color:aqua;
+    
+}
