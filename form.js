@@ -35,7 +35,7 @@
 //     },1000)
     
     
-let a = [1,3,4,5,6,1,2,3,4,5]
+// let a = [1,3,4,5,6,1,2,3,4,5]
 
 // function duplicateElement(_arry){
 // let b = []
@@ -53,20 +53,50 @@ let a = [1,3,4,5,6,1,2,3,4,5]
 // duplicateElement(a);
 
 
-function countduplicate(_arry){
+// function countduplicate(_arry){
 
-     let count = []
-_arry.forEach(value => {
-    if(!count[value]){
-        count[value] = 1;
-    }
-    else{
-        count[value]++;
-    }
+//      let count = []
+// _arry.forEach(value => {
+//     if(!count[value]){
+//         count[value] = 1;
+//     }
+//     else{
+//         count[value]++;
+//    
     
-});
-return count
+// });
+// return count
+// }
+// const result = countduplicate(a)
+// console.log(result)
+
+
+const regForm = document.getElementById("regForm")
+ regForm.addEventListener("submit",function formSubmit(e){
+
+e.preventDefault()
+
+var name = document.getElementById("name")
+console.log(name)
+var email = document.getElementById("email").value
+console.log(email)
+var password = document.getElementById("password").value
+console.log(password)
+
+console.log(e)
+
+
+
+
+if(name.value === ''){
+
+ let text =document.getElementById("error").textContent = "must and should"
+document.getElementById("error").style.display = "block"
+
 }
-const result = countduplicate(a)
-console.log(result)
+
+ 
+
+
+ })
 
