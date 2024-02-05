@@ -33,7 +33,6 @@ document.getElementById('total').textContent = details.reduce((sum,v)=>{
     
 },0)
 
-
 function deleteItem(){
 let item = JSON.parse(event.target.getAttribute('data_pro'))
 details.splice(item,1)
