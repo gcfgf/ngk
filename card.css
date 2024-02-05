@@ -1,0 +1,38 @@
+img{
+    height: 150px;
+    width:150px
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: azure;
+    align-items: center;
+    
+
+}
+ul {
+   display: flex; 
+   gap: 20px;
+   text-decoration: none;
+   list-style-type: none;
+   
+}
+.product{
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 8px 8px 5px black;
+   padding: 20px;
+   margin: 20px;
+   
+}
+#products{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.cart_details{
+    display: flex;
+}

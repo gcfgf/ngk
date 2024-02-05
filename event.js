@@ -34,7 +34,7 @@ button.addEventListener("click",function(e){
 if(e.target.tagName ==="BUTTON"){
    console.log(e.target.innerText)
 }
-
+         
 })
 
 /**event dedication
