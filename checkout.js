@@ -2,11 +2,12 @@ let details = JSON.parse(localStorage.getItem("cardDetails"))
 console.log(details)
 
 const mainDiv = document.getElementById('products')
+const cartcount = document.getElementById("count")
 function fetchData(){
 
     details.forEach((pro,index)=>{
    
-        const div= document.createElement('Div')
+        const div= document.createElement('div')
         div.classList.add('product')
         const img = document.createElement("img") 
         img.src = pro.thumbnail
@@ -20,6 +21,7 @@ function fetchData(){
         dlte.addEventListener('click',deleteItem)
      div.append(title,img,price,dlte)
     mainDiv.appendChild(div)
+    
 
     })
 
@@ -34,7 +36,14 @@ document.getElementById('total').textContent = details.reduce((sum,v)=>{
 },0)
 
 function deleteItem(){
+ mainDiv.innerHTML =""
 let item = JSON.parse(event.target.getAttribute('data_pro'))
 details.splice(item,1)
-fetchData()
+document.getElementById('total').textContent = details.reduce((sum,v)=>{
+    return v.price - sum
+    
+
+},0)
+
+
 }

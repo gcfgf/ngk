@@ -1,5 +1,4 @@
 
-
 async function fetchData(){
 
     try{
@@ -37,6 +36,9 @@ function displayData(data){
         div.classList.add("product")
         const img = document.createElement("img")
         img.src = data.thumbnail
+        const productLink  = document.createElement('a')
+        // productLink.href = `./products.html?pro=${encodeURIComponent(JSON.stringify(data))}`;
+        // productLink.target  = "_blank"
         const title = document.createElement("h2")
         title.textContent= data.title
         const price = document.createElement("price")
@@ -53,7 +55,7 @@ function displayData(data){
         }) 
               
 }
-function addCart(){
+export function addCart(){
 
     const newData = JSON.parse(event.target.getAttribute('cart_product'))
     console.log(newData)
@@ -65,12 +67,13 @@ function addCart(){
   
   cart_button.addEventListener("click",moveCheckOut)
 
-function moveCheckOut(){
+export function moveCheckOut(){
 
     localStorage.setItem("cardDetails",JSON.stringify(cart))
     window.location.href = "./checkout.html"
 
 }
+
 
 
 
